@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>drag implementation</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="drag.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <button id="resetButton">Reset</button>
+
+      <div class="left-container">
+        <div class="drag-list" draggable="true">
+          <img src="images/can.jpeg" draggable="false" alt="" />
+
+          <p>can you code?</p>
+          <img
+            src="images/checked.png"
+            alt=""
+            class="checked"
+            style="display: none"
+          />
+        </div>
+        <div class="drag-list" draggable="true">
+          <img src="images/yes.jpeg" draggable="false" alt="" />
+
+          <p>yes i can!</p>
+          <img
+            src="images/checked.png"
+            alt=""
+            class="checked"
+            style="display: none"
+          />
+        </div>
+        <div class="drag-list" draggable="true">
+          <img src="images/go.jpg" draggable="false" alt="" />
+
+          <p>let's go!</p>
+          <img
+            src="images/checked.png"
+            alt=""
+            class="checked"
+            style="display: none"
+          />
+        </div>
+      </div>
+      <div class="right-container"></div>
+    </div>
+  </body>
+</html>
