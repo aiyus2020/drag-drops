@@ -28,32 +28,7 @@ for (let list of dragList) {
     });
   });
 }
-for (let list of dragList) {
-  list.addEventListener("touchmove", function (e) {
-    let selects = e.target;
-    rightContainer.addEventListener("dragover", function (e) {
-      e.preventDefault();
-    });
-    rightContainer.addEventListener("drop", (e) => {
-      if (selects) {
-        rightContainer.appendChild(selects);
-        selects.querySelector(".checked").style.display = "block"; // Show the checked icon
-        selects = null;
-      }
-    });
-    leftContainer.addEventListener("dragover", function (e) {
-      e.preventDefault();
-    });
-    leftContainer.addEventListener("drop", (e) => {
-      if (selects) {
-        leftContainer.appendChild(selects);
-        selects.querySelector(".checked").style.display = "block"; // Show the checked icon
 
-        selects = null;
-      }
-    });
-  });
-}
 let resetButton = document.getElementById("resetButton");
 
 resetButton.addEventListener("click", function () {
