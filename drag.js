@@ -28,6 +28,7 @@ for (let list of dragList) {
     });
   });
 }
+
 let resetButton = document.getElementById("resetButton");
 
 resetButton.addEventListener("click", function () {
